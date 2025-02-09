@@ -1,0 +1,446 @@
+ls
+la
+eza
+ls
+eza
+ls
+ls -la
+config nu
+ls
+eaz
+eza
+ls
+config nu
+ls
+cd 
+z
+$nu.env-path
+nv $nu.env-path
+nvim
+nvim $nu.env-path
+config nu
+nvim $nu.env-path
+config nu
+z
+config nu
+nvim $nu.env-path
+z
+config env
+config nu
+nv
+z
+z ~/projects/
+z ~/tmp/generated/
+z proj
+nv
+alias nv nvim
+alias nvim nv
+ls
+if $env.NVIM { echo "NVIM" } else { echo "Not NVIM" } 
+if $env.NVIM? { echo "NVIM" } else { echo "Not NVIM" } 
+$env
+$env | table
+$env | table -e
+$env
+$env.NVIM
+$env | path NVIM
+$env | path
+$env | path existw
+$env | path exists
+$env | path exists | NVIM
+$env | path exists | "NVIM"
+$env | path "NVIM" exists
+if "NVIM" in $env {<\n>}
+if not "NVIM" in $env {<\n>}
+if not "NVIM" in $env {<\n>echo "NVIM not set"<\n>}<\n>
+if "NVIM" not-in $env {<\n>echo "NVIM not set"<\n>}<\n>
+config nu
+ls
+z
+z tmp
+z prot
+z gen
+ls
+ps
+ls
+jj
+nv
+ls
+config nu
+alias
+ls
+ls -l
+la
+ll -al
+$env.LAST_EXIT_CODE
+ls
+adf
+arch
+archw
+ls
+nv
+nvim
+cra
+nvim
+ls
+for $x in $env {<\n>$x<\n>}
+for $x in $env {<\n>echo $x<\n>}
+for $x in $env {<\n>print($x)<\n>}
+ls
+l
+la
+ls
+ll
+ls
+tree
+eza --tree
+eza --help
+eza --json
+nv ~/.config/starship.toml
+nvim ~/.config/starship.toml
+config nu
+mkdir ~/.config/starship/
+cp ~/.config/starship.toml ~/.config/starship/
+y
+yazi
+exit
+config nu
+nv
+config nu
+$env
+$env -e
+config nu
+$env
+$env | table
+config nu
+starship --help
+starship prompt
+$env.STARSHIP_SHELL
+$env.STARSHIP_CONFIG
+ls ~/.config/starship/starship.toml
+config nu
+nvim
+$env.HOME
+echo "$env.HOME/test"
+echo ($env.HOME | path append "test")
+echo ($env.HOME | path expand ) 
+echo ($env.HOME | path join ".config/starship/starship.toml" ) 
+config nu
+asdf
+i
+ls
+nvim ~/.config/starship/starship.toml
+config nu
+i
+conig nu
+config nu
+(ansi { fg: "#CED7CF" bg: "#3465A4" })
+config nu
+(ansi { fg: "#CED7CF" bg: "#3465A4" }) test
+(ansi { fg: "#CED7CF" bg: "#3465A4" }) "test"
+[(ansi { fg: "#CED7CF" bg: "#3465A4" }) "test"]
+config nu
+test
+tes
+test
+nv
+nvim
+config nu
+$"test" + "wow"
+config nu
+config  nu
+config nu
+if "NVIM" not-in $env {<\n>echo "NVIM not set"<\n>}<\n>
+if "NVIM" not-in $env {<\n>  echo "NVIM not set"<\n>}<\n>
+config nu
+test
+config nu
+nv
+nvim
+if "NVIM" not-in $env {<\n>  echo "NVIM not set"<\n>}<\n>
+l
+ls
+nv
+ls
+brew
+ls
+eza
+l
+alias --help
+alias l = eza -l
+ll
+l
+ls
+ll
+l
+ls
+alias ll = eza -l
+ll
+ls
+alias tree = eza --true
+tree
+alias tree = eza --tree
+tree
+ll
+ls
+ll | table
+ll
+indent 
+~
+-
+cd -
+alias - = cd -
+-
+cd ~
+-
+alias
+alias 
+alias | table
+alias --help
+nvim
+ll
+nvim
+yd
+y
+nv
+nvim
+rd.
+r.
+rd.
+ls | to json
+use std/formats *
+ls | to yaml
+ls | to json
+$env | to json
+ls | to toml
+ls | to json
+ls | to toml
+ls | to json | to yaml
+ls | to json | to toable
+ls | to json | to table
+ls | to json | table
+ls | to json
+ls | to json | from json
+ls | to json | from json | path name
+ls | to json | from json | name
+ls | to json | from json name
+ls | to json | from json | select name
+jj split
+jj
+jj desc
+ls
+a
+i
+ls
+ls -l
+ls -a
+ll
+eza
+ll
+ls
+ls -a
+yd
+jj git init --colocate
+jj
+ls
+bat history.txt
+bat
+bat history.txt
+ls
+nv
+i .
+nv
+cd ~/.config/nushell/
+nv
+yd
+$env.config | table -e
+$env.config | table -e | bat
+$env.config | table -e | bat -p
+if ($env.HOME | path join '.cargo' | path exists) {<\n>echo "Hello World!"<\n>}
+if '~/.cargo' | path exists) {<\n>echo "Hello World!"<\n>}
+if ('~/.cargo' | path exists) {<\n>echo "Hello World!"<\n>}
+if ('~/.cargos' | path exists) {<\n>echo "Hello World!"<\n>} else { <\n>echo "Nope!"<\n>}
+if ("~/.cargos" | path exists) {<\n>echo "Hello World!"<\n>} else { <\n>echo "Nope!"<\n>}
+if ("~/.cargo" | path exists) {<\n>echo "Hello World!"<\n>} else { <\n>echo "Nope!"<\n>}
+if "~/.cargo" | path exists {<\n>echo "Hello World!"<\n>} else { <\n>echo "Nope!"<\n>}
+d init fish
+d init --help
+ls ~/.config/nushell/
+rm ~/.config/nushell/zoxide.nu
+$env.HOME | path join '.config/bin/zoxide' | path exists
+$env
+$env | table
+$env.PATH
+nvim $nu.env-path
+echo $nu.env-path
+nvim $nu.env-path
+overlay
+overlay list
+overlay new
+overlay new test
+overlay
+loverlay list
+overlay list
+'[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]'<\n>| from json<\n>| to json
+'[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]'
+'[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]'|<\n>from json |<\n>to json
+config nu
+source $nu.config-path
+$nu.current-exe
+pwd
+which pwd
+pwd
+basename
+basename pwd
+basename (pwd)
+ls
+z tmp
+zoxide 
+less 
+bat ~/.config/nushell/zoxide.nu
+z
+z shel
+rd ~/.config/nushell/zoxide.nu
+rm ~/.config/nushell/zoxide.nu
+z
+$env.PATH
+source ~/.config/nushell/zoxide.nu
+z
+less ~/.config/nushell/zoxide.nu
+source ~/.config/nushell/zoxide.nu
+zi
+i .
+$nu
+help aliases
+z
+z tmp
+z
+q
+z tmp
+source ~/.config/nushell/zoxide.nu
+z
+zi
+z foo
+z
+zi
+zi proj
+zi gen
+zi
+zi tmp
+zi
+mcd test
+d mcd test
+mkdir test
+cd test/
+rd.
+ls
+cd ~/
+ls
+cd ~/tmp/
+ls
+mkdir test
+cd test
+rd.
+cd ~/tmp/
+cd ..
+(basename (pwd))
+pwd
+$nu
+z tmp
+ls
+mkdir temp
+ls
+rd temp/
+d rd temp/
+ls
+mkdir test
+cd test
+ls
+("." | path dirname)
+("." | path dirname)<\n>path dirname
+path self
+pwd
+pwd | path dirname 
+cd ~/tmp/test/
+rd.
+-
+..
+-
+zi
+rd.
+ls
+r.
+rd.
+-
+cd ~/tmp/test/
+cd ~/tmp/
+-
+source $nu.config-path
+-
+cd -
+..
+cd -
+zi
+mkdir test
+cd test
+rd.
+cd ~/tmp/
+mkdir test
+rd.
+cd test/
+rd.
+zi
+mkdir test
+cd test
+rd.
+yc
+mkdir --help
+zi
+yd
+zi
+yd
+yg
+yd
+ls
+mkdir test/test
+ls
+z
+zi
+..
+zi
+z proj
+z tmp
+zi arch
+zi
+z tmp
+mcd test
+rd.
+mcd test
+rd test
+zi
+mcd test
+ls
+mcd test
+rd test
+rm -rf test
+mcd test
+..
+mcd test
+rd.
+mcd test
+..
+rd test
+mkdir test test2
+rd test test2
+y
+zi .conf
+jj git clone --colocate git@github.com:jimmiebfulton/conf-yazi.git yazi
+y
+zi nush
+jj
+jj st
+jj
+jj desc
+jj
+nv .gitignore
+jj
