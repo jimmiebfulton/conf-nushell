@@ -444,3 +444,9 @@ jj desc
 jj
 nv .gitignore
 jj
+jj split
+jj
+jj git remote add origin git@github.com:jimmiebfulton/conf-nushell.git
+jj gp
+jj sm 
+jj gp
