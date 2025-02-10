@@ -1,23 +1,4 @@
 # config.nu
-#
-# Installed by:
-# version = "0.102.0"
-#
-# This file is used to override default Nushell settings, define
-# (or import) custom commands, or run any other startup tasks.
-# See https://www.nushell.sh/book/configuration.html
-#
-# This file is loaded after env.nu and before login.nu
-#
-# You can open this file in your default editor using:
-# config nu
-#
-# See `help config nu` for more options
-#
-# You can remove these comments if you want or leave
-# them for future reference.
-#
-source local.nu
 
 $env.config.edit_mode = 'vi' 
 $env.config.buffer_editor = "nvim"
@@ -25,12 +6,35 @@ $env.config.show_banner = false
 
 $env.EDITOR = "nvim"
 
-# Thus must be a fully expanded path
-$env.XDG_CONFIG_HOME = ($env.HOME | path join ".config")
+# Path
 
-source prompt.nu
-source path.nu
-source alias.nu
-source functions.nu
-source zoxide.nu
+$env.PATH = ($env.PATH | append '/opt/homebrew/bin/')
+$env.PATH = ($env.PATH | append ($env.HOME | path join 'bin'))
+$env.PATH = ($env.PATH | append ($env.HOME | path join '.cargo/bin'))
 
+if ("/Applications/Araxis Merge.app" | path exists) {
+  $env.PATH = ($env.PATH | append "/Applications/Araxis Merge.app/Contents/Utilities/")
+}
+
+if ("/opt/homebrew/opt/llvm" | path exists) {
+  $env.PATH = ($env.PATH | append "/opt/homebrew/opt/llvm/bin/")
+}
+
+if ("/usr/local/go/bin" | path exists) {
+  $env.PATH = ($env.PATH | append "/usr/local/go/bin")
+}
+
+if ("~/go" | path exists) {
+  $env.PATH = ($env.PATH | append "~/go/bin/")
+}
+
+if ("~/.config/nushell/local.nu" | path exists) {
+  source "~/.config/nushell/local.nu"
+}
+
+use ~/.config/nushell/prompt.nu *
+use ~/.config/nushell/path.nu *
+use ~/.config/nushell/alias.nu *
+use ~/.config/nushell/functions.nu *
+
+source ~/.config/nushell/zoxide.nu

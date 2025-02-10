@@ -450,3 +450,191 @@ jj git remote add origin git@github.com:jimmiebfulton/conf-nushell.git
 jj gp
 jj sm 
 jj gp
+jj gpn
+sudo nv /etc/shells
+nv
+which nu
+sudo vim /etc/shells
+chsh nu
+chsh --help 
+chsh -s nu jimmie
+chsh -s (which nu) jimmie
+which nu
+...(which nu)
+(which nu | into string)
+(which nu | 0)
+(which nu | 0.name)
+which nu
+which nu | select path
+which nu | select path | into string
+which nu | select path | first 
+which nu | select path | first | into string
+which nu | first 
+which nu | first | select path
+which nu | first | select path | to string
+which nu | first | select path | to string 0
+which nu | first | select path | string
+which nu | first | select path | to string
+which nu | first | select path | into string
+which nu | first | select path.0
+which nu | first | select path | path.0
+which nu | first | select path
+which list
+which nu
+(which nu | first)
+(which nu | first).0
+(which nu | first).path
+chsh -s (which nu | first).path jimmie
+nv
+$nu.vendor-autoload-dirs
+$nu.data-dir
+$env
+$env | table
+import
+ls
+zi
+$env | table
+nu
+config nu
+$nu.config-path
+nvim
+$env.PATH = ($env.PATH | append /opt/homebrew/bin)
+nvim
+$nu.config-path
+nvim
+ls
+zi
+$env.PATH
+nvim
+ls
+i
+zi
+ls
+ll
+ls
+ll
+ls
+la
+ls
+ll
+jj st
+zi
+jj
+jj st
+nv
+/opt/homebrew/bin/nvim
+cd ~/.config/nushell/
+/opt/homebrew/bin/nvim
+ls
+i
+zi
+nv
+nvim
+nv
+z tem
+z tmp
+mcd test
+rd.
+ls
+z tmp
+zi
+$nu
+nu
+chsh -s (which nu | first).path jimmie
+nv
+chsh -s /opt/homebrew/bin/fish jimmie
+ls
+nv
+$env
+$env | table
+nv
+nu
+fish
+nv
+nu
+nu
+$env | table
+brew upgrade zoxide
+nv
+zi
+nv
+$env
+$env | table
+nv
+nu
+nvim
+/opt/homebrew/bin/nvim
+cd ~/.config/nushell/
+/opt/homebrew/bin/nvim
+nv
+nvim
+/opt/homebrew/bin/nvim
+cd ~/.config/nushell/
+ls
+/opt/homebrew/bin/nvim
+ls
+zi
+nv
+ls
+zi
+nv
+zz
+zi
+nv
+ls
+pwd
+ls
+ls
+cargo
+nv
+chsh -s /opt/homebrew/bin/fish jimmie
+zi
+nv
+ls
+ls
+__zoxide_z 
+__zoxide_zi
+fzf
+fd
+rg
+ls
+neovide 
+neovide &
+chsh -s (which nu | first).path jimmie
+chsh -s /opt/homebrew/bin/fish jimmie
+$nu.config-path
+$nu | table
+cd "/Users/jimmie/Library/Application Support/"
+ls
+rm nushell/
+rd nushell/
+ln -s ~/.config/nushell/ nushell
+chmod 0400 nushell
+la
+ls -al
+cd ~/.config/nushell/
+cd ~/.config/
+ls
+ls -al
+chmod 755 nushell
+cd nushell/
+-
+cd -
+cd "/Users/jimmie/Library/Application Support/"
+ls
+nv
+nvim
+/opt/homebrew/bin/nvim
+nv
+ls
+nv
+cd ~/.config/wezterm/
+ll
+ls
+ls  -al
+jj git init --colocate
+jj
+jj st
+jj
+jj gp
+ssh-add 

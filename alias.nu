@@ -1,8 +1,9 @@
-
-alias nv = nvim
-alias ll = eza -l
-alias tree = eza --tree
-alias a = archetect
-alias y = yazi
-alias i = idea
-alias c = clion
+# Aliases
+ 
+export alias nv = nvim
+export alias ll = eza -l
+export alias tree = eza --tree
+export alias a = archetect
+export alias y = yazi
+export alias i = idea
+export alias c = clion

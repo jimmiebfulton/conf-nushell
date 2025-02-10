@@ -1,6 +1,7 @@
+# Functions
 
-
-def --env yd [...args] {
+# Select directory from Yazi
+export def --env yd [...args] {
   let directory = (yazi --cwd-file /dev/stdout)
 	if $directory != "" and $directory != $env.PWD {
 		cd $directory
@@ -8,33 +9,36 @@ def --env yd [...args] {
 }
 
 # Delete current directory
-def --env rd. [...args] {
+export def --env rd. [...args] {
   let parent = (pwd | path dirname)
   let directory = (pwd | path basename)
   cd $parent
   d rd $directory
 }
 
-def rd [...args] {
+# Remove one or more directories, safely
+export def rd [...args] {
   d rd ...$args
 }
 
-def --env mcd [...args] {
+# Make a directory and enter it
+export def --env mcd [...args] {
   mkdir $args.0
   cd $args.0
 }
 
-def pbc [...args] {
+# Add file to clipboard
+export def pbc [...args] {
   pbcopy < $args.0
 }
 
 # Open Intellij in current directory
-def --env i. [...args] {
+export def --env i. [...args] {
   idea .
 }
 
 # Open Intellij in current directory
-def --env c. [...args] {
+export def --env c. [...args] {
   idea .
 }
 

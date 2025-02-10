@@ -18,7 +18,7 @@
 # them for future reference.
 
 if ('~/.cargo/bin/zoxide' | path exists) {
-  zoxide init nushell | save -f ~/.config/nushell/zoxide.nu
+  /opt/homebrew/bin/zoxide init nushell | save -f ~/.config/nushell/zoxide.nu
 } else {
   echo "WARN: Zoxide is not installed"
 }
