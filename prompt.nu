@@ -16,7 +16,7 @@ const INDICATOR = ""
 
 export def create_left_prompt [] {
   $env.STARSHIP_SHELL = "nu"
-  $env.STARSHIP_CONFIG = ($env.HOME | path join ".config/starship/starship.toml")
+  $env.STARSHIP_CONFIG = ($env.HOME | path join ".config/starship/starship_nu.toml")
   starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
 }
 
