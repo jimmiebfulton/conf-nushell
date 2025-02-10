@@ -2,3 +2,9 @@ rd history.txt
 jj
 jj diff
 jj desc
+jj new
+nv .gitignore
+ls
+jj
+jj desc
+jj sm
