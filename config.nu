@@ -7,34 +7,8 @@ $env.config.show_banner = false
 $env.EDITOR = "nvim"
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense'
 
-# Path
-
-$env.PATH = ($env.PATH | append '/opt/homebrew/bin/')
-$env.PATH = ($env.PATH | append ($env.HOME | path join 'bin'))
-$env.PATH = ($env.PATH | append ($env.HOME | path join '.cargo/bin'))
-
-if ("/Applications/Araxis Merge.app" | path exists) {
-  $env.PATH = ($env.PATH | append "/Applications/Araxis Merge.app/Contents/Utilities/")
-}
-
-if ("/opt/homebrew/opt/llvm" | path exists) {
-  $env.PATH = ($env.PATH | append "/opt/homebrew/opt/llvm/bin/")
-}
-
-if ("/usr/local/go/bin" | path exists) {
-  $env.PATH = ($env.PATH | append "/usr/local/go/bin")
-}
-
-if ("~/go" | path exists) {
-  $env.PATH = ($env.PATH | append "~/go/bin/")
-}
-
 if ("~/.config/nushell/local.nu" | path exists) {
   source "~/.config/nushell/local.nu"
-}
-
-if ("~/.local/bin" | path exists) {
-  $env.PATH = ($env.PATH | append "~/.local/bin/")
 }
 
 use "~/.config/nushell/local.nu" *
