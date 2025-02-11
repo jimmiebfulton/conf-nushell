@@ -1,9 +1,9 @@
 
 # Prompt
 
-const INSERT_COLOR = '#689d6a'
-const NORMAL_COLOR = '#3465A4'
-const MULTI_COLOR = '#d65d0e'
+const INSERT_COLOR = '#6272a4'
+const NORMAL_COLOR = '#4c566a'
+const MULTI_COLOR = '#5e81ac'
 const TEXT_COLOR = "#ffffff"
 const INSERT = (ansi { fg: $TEXT_COLOR bg: $INSERT_COLOR attr: b })
 const INSERT_INVERSE = (ansi {  fg: $INSERT_COLOR })
