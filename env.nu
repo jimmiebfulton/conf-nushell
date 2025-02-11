@@ -22,4 +22,3 @@ if ('~/.cargo/bin/zoxide' | path exists) {
 } else {
   echo "WARN: Zoxide is not installed"
 }
-

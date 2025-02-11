@@ -1,7 +1,7 @@
 # Functions
 
 # Select directory from Yazi
-export def --env yd [...args] {
+export def --env y [...args] {
   let directory = (yazi --cwd-file /dev/stdout)
 	if $directory != "" and $directory != $env.PWD {
 		cd $directory

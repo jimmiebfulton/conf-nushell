@@ -5,6 +5,7 @@ $env.config.buffer_editor = "nvim"
 $env.config.show_banner = false
 
 $env.EDITOR = "nvim"
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense'
 
 # Path
 
@@ -36,12 +37,13 @@ if ("~/.local/bin" | path exists) {
   $env.PATH = ($env.PATH | append "~/.local/bin/")
 }
 
-if ("~/.config/nushell/local.nu" | path exists) {
-  use ~/.config/nushell/local.nu *
-}
+use "~/.config/nushell/local.nu" *
+use "~/.config/nushell/jj.nu" *
 use ~/.config/nushell/prompt.nu *
 use ~/.config/nushell/path.nu *
 use ~/.config/nushell/alias.nu *
 use ~/.config/nushell/functions.nu *
 
 source ~/.config/nushell/zoxide.nu
+source ~/.config/nushell/carapace.nu
+
