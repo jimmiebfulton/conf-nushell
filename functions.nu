@@ -42,3 +42,12 @@ export def --env c. [...args] {
   idea .
 }
 
+export def --env jjp [...args] {
+  jj config set --repo user.email "jimmie.fulton@gmail.com"
+  jj describe --reset-author --no-edit
+}
+
+export def --env --wrapped jjcl [repo, ...rest] {
+  jj git clone --colocate $repo ...$rest
+}
+
