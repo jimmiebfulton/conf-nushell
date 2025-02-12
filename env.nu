@@ -22,3 +22,7 @@ if ('~/.cargo/bin/zoxide' | path exists) {
 } else {
   echo "WARN: Zoxide is not installed"
 }
+
+if ('/opt/homebrew/bin/carapace' | path exists) {
+  # /opt/homebrew/bin/carapace _carapace nushell | save --force "~/.config/nushell/carapace.nu"
+}

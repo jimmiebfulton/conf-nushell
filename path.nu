@@ -1,8 +1,16 @@
 
 export-env {
-  $env.PATH = ($env.PATH | append '/opt/homebrew/bin/')
-  $env.PATH = ($env.PATH | append ($env.HOME | path join 'bin'))
-  $env.PATH = ($env.PATH | append ($env.HOME | path join '.cargo/bin'))
+  if ("~/.cargo/bin" | path exists) {
+    $env.PATH = ($env.PATH | prepend ~/.cargo/bin/)
+  }
+
+  if ("/opt/homebrew/" | path exists) {
+    $env.PATH = ($env.PATH | prepend '/opt/homebrew/bin/')
+  }
+
+  if ("~/bin" | path exists) {
+    $env.PATH = ($env.PATH | append ($env.HOME | path join 'bin'))
+  }
 
   if ("/Applications/Araxis Merge.app" | path exists) {
     $env.PATH = ($env.PATH | append "/Applications/Araxis Merge.app/Contents/Utilities/")

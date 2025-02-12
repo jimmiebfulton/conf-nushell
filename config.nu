@@ -11,10 +11,10 @@ if ("~/.config/nushell/local.nu" | path exists) {
   source "~/.config/nushell/local.nu"
 }
 
+use ~/.config/nushell/path.nu *
 use "~/.config/nushell/local.nu" *
 use "~/.config/nushell/jj.nu" *
 use ~/.config/nushell/prompt.nu *
-use ~/.config/nushell/path.nu *
 use ~/.config/nushell/alias.nu *
 use ~/.config/nushell/functions.nu *
 
