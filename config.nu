@@ -21,3 +21,4 @@ use ~/.config/nushell/functions.nu *
 source ~/.config/nushell/zoxide.nu
 source ~/.config/nushell/carapace.nu
 
+$env.LS_COLORS = (vivid generate gruvbox-dark)

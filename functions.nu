@@ -51,3 +51,9 @@ export def --env --wrapped jjcl [repo, ...rest] {
   jj git clone --colocate $repo ...$rest
 }
 
+export def --env lscolors [...args] {
+  let theme = (vivid themes | lines | input list --fuzzy)
+  export-env {
+    $env.LS_COLORS = (vivid generate $theme)
+  }
+}
