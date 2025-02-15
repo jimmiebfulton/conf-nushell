@@ -1,6 +1,7 @@
 # config.nu
 
 $env.config.edit_mode = 'vi' 
+$env.config.table.mode = 'compact'
 $env.config.buffer_editor = "nvim"
 $env.config.show_banner = false
 
@@ -22,3 +23,4 @@ source ~/.config/nushell/zoxide.nu
 source ~/.config/nushell/carapace.nu
 
 $env.LS_COLORS = (vivid generate gruvbox-dark)
+
