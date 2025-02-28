@@ -1,11 +1,11 @@
 
 export-env {
-  if ("~/.cargo/bin" | path exists) {
-    $env.PATH = ($env.PATH | prepend ~/.cargo/bin/)
-  }
-
   if ("/opt/homebrew/" | path exists) {
     $env.PATH = ($env.PATH | prepend '/opt/homebrew/bin/')
+  }
+
+  if ("~/.cargo/bin" | path exists) {
+    $env.PATH = ($env.PATH | prepend ~/.cargo/bin/)
   }
 
   if ("~/bin" | path exists) {
