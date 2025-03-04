@@ -24,5 +24,5 @@ if ('~/.cargo/bin/zoxide' | path exists) {
 }
 
 if ('/opt/homebrew/bin/carapace' | path exists) {
-  # /opt/homebrew/bin/carapace _carapace nushell | save --force "~/.config/nushell/carapace.nu"
+   /opt/homebrew/bin/carapace _carapace nushell | save --force "~/.config/nushell/carapace.nu"
 }
