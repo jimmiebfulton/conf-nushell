@@ -11,5 +11,5 @@ export alias y = yazi
 export alias i = idea
 export alias c = clion
 export alias jji = jj git init --colocate
-export alias nopen = open
-export alias open = ^open
+export alias jjgc = jj git clone --colocate
+
